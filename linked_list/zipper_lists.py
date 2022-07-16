@@ -46,7 +46,7 @@ def zipper_lists(head_1, head_2):
     # current_1 = head_1.next # a, b
     # current_2 = head_2 # x
     # count = 0
-    # while current_1 or current_2:
+    # while current_1 and current_2:
     #     if count % 2 == 0:
     #         tail.next = current_2 
     #         current_2 = current_2.next 
