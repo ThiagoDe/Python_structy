@@ -1,5 +1,4 @@
 from collections import deque
-from turtle import distance
 
 grid = [
     ['O', 'O', 'O', 'O', 'O'],
