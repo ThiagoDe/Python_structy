@@ -10,27 +10,23 @@
 # * [execution time limit] 4 seconds(py3)
 # * [input] array.integer numbers
 numbers = [8, 5, 6, 16, 5]
-        #  0, 1, 2, 3, 4
-left = 1
-right = 3
-def solution(numbers, left, right):  # [8, 5, 6, 16, 5]
-    res = []
+l = 1
+r = 3
+def solution(numbers, l, r):
+    result = []
     for i in range(len(numbers)):
-        print(i, 'index')
-        for x in range(left, right + 1): # 
-            print(x)
-            # if numbers[i] / x == (i + 1): # 8 / 1
-            if (i + 1) * x == numbers[i]:
-                print('true')
-                res.append(True)
-                print(res)
-                # continue
-        # print(i, 'index2')
-        if i == right and (i + 1) * x != numbers[i]:
-            res.append(False)
+        print(i, 'i')
+        temp = numbers[i] / (i + 1)
+        if temp >= l and temp <= r and temp % 1 == 0:
+            result.append(True)
+        else:
+            result.append(False)
 
-    return res
+    return result
+        # for x in range(l, r + 1):
+        #     print(x, 'x')
+        #     if (i + 1) * x == numbers[i]:
 
 
-print(solution(numbers, left, right)) 
-# [false, false, true, false, true]
+
+print(solution(numbers, l, r))

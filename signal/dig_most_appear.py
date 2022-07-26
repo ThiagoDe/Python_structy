@@ -19,9 +19,10 @@ def solution(a):
     for i in arr:
         res[i] = 1 + res.get(i, 0)
 
-    print(res)
+    # print(res)
     maxVal = max(res.values())
-    return list({k for (k,v) in res.items() if v == maxVal})
+
+    return [k for (k,v) in res.items() if v == maxVal]
     # print(res.items())
     # result = {key: value for (key, value) in res.items() if value == maxVal}
     # r = list(result.keys())
