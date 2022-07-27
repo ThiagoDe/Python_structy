@@ -15,7 +15,7 @@ r = 3
 def solution(numbers, l, r):
     result = []
     for i in range(len(numbers)):
-        print(i, 'i')
+        # print(i, 'i')
         temp = numbers[i] / (i + 1)
         if temp >= l and temp <= r and temp % 1 == 0:
             result.append(True)
