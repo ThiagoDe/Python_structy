@@ -1,6 +1,5 @@
 from platform import node
 
-
 edges = [
     ('i', 'j'),
     ('k', 'i'),

@@ -2,6 +2,7 @@ def max_value(nums):
     max = float('-inf')
 
     for n in nums:
+        # max = max(max, n)
         if n > max:
             max = n 
 
